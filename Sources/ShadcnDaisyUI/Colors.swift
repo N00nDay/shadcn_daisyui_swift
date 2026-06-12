@@ -2,7 +2,7 @@ import SwiftUI
 
 /// A semantic color token with light and dark variants baked in.
 ///
-/// Values are sRGB conversions of the shadcn_daisyui theme's OKLCH tokens —
+/// Values are sRGB conversions of the shadcn_daisyui theme's OKLCH tokens -
 /// see TOKENS.md for the traceability table. Views never reference literal
 /// colors; they use the `Color.sd*` accessors below.
 public struct SDColor: Sendable, Equatable {
@@ -96,7 +96,7 @@ public enum SDColors {
     public static let surfaceSubtle = SDColor(
         light: .init(0.9606, 0.9606, 0.9606), dark: .init(0.0905, 0.0905, 0.0905))
 
-    // Status colors — the only non-neutral accents; they always mean status.
+    // Status colors - the only non-neutral accents; they always mean status.
     public static let info = SDColor(
         light: .init(0.2265, 0.5046, 0.9651), dark: .init(0.2994, 0.6017, 0.9733))
     public static let infoForeground = SDColor(

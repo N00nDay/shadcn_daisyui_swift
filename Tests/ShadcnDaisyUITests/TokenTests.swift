@@ -3,7 +3,7 @@ import XCTest
 @testable import ShadcnDaisyUI
 
 /// Tokens mirror the shadcn_daisyui web theme. The expected values here come
-/// from TOKENS.md (the OKLCH → sRGB traceability table) — if the web theme
+/// from TOKENS.md (the OKLCH → sRGB traceability table) - if the web theme
 /// changes, update TOKENS.md first, then these constants.
 final class TokenTests: XCTestCase {
     func testSpacingIsTheBlessedGrid() {
@@ -40,7 +40,7 @@ final class TokenTests: XCTestCase {
     }
 
     func testForegroundPairsAreConsistent() {
-        // Light surfaces carry dark text and vice versa — a cheap contrast sanity check.
+        // Light surfaces carry dark text and vice versa - a cheap contrast sanity check.
         XCTAssertLessThan(SDColors.foreground.light.red, 0.2)
         XCTAssertGreaterThan(SDColors.foreground.dark.red, 0.9)
         XCTAssertGreaterThan(SDColors.primaryForeground.light.red, 0.9)
@@ -49,8 +49,8 @@ final class TokenTests: XCTestCase {
 
     func testBundledGuidelinesArePresent() throws {
         let md = try Guidelines.markdown()
-        XCTAssertTrue(md.contains("# shadcn_daisyui — platforms"))
-        XCTAssertTrue(md.contains("# shadcn_daisyui — spacing"))
-        XCTAssertTrue(md.contains("# shadcn_daisyui — motion"))
+        XCTAssertTrue(md.contains("# shadcn_daisyui - platforms"))
+        XCTAssertTrue(md.contains("# shadcn_daisyui - spacing"))
+        XCTAssertTrue(md.contains("# shadcn_daisyui - motion"))
     }
 }

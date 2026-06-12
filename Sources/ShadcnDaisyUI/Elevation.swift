@@ -17,7 +17,7 @@ public enum Elevation {
 }
 
 extension View {
-    /// Apply an elevation token. This is the ceiling — don't compose stronger
+    /// Apply an elevation token. This is the ceiling - don't compose stronger
     /// shadows.
     public func sdShadow(_ token: Elevation.ShadowToken) -> some View {
         shadow(

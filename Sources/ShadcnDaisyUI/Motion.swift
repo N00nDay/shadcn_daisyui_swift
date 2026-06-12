@@ -5,11 +5,11 @@ import SwiftUI
 /// system presentation animations for sheets and covers; respect
 /// `accessibilityReduceMotion` before adding custom animation.
 public enum Motion {
-    /// 0.15s — micro state changes (selection, color, small reveals)
+    /// 0.15s - micro state changes (selection, color, small reveals)
     public static let microDuration: TimeInterval = 0.15
-    /// 0.18s — small surfaces entering/leaving (popovers, menus)
+    /// 0.18s - small surfaces entering/leaving (popovers, menus)
     public static let surfaceDuration: TimeInterval = 0.18
-    /// 0.30s — large surfaces (sheets, drawers)
+    /// 0.30s - large surfaces (sheets, drawers)
     public static let sheetDuration: TimeInterval = 0.30
 
     public static let micro: Animation = .easeOut(duration: microDuration)

@@ -3,7 +3,7 @@
 Design tokens for native iOS / iPadOS apps, mirroring the
 [shadcn_daisyui](https://github.com/N00nDay/shadcn_daisyui) web design system:
 semantic colors (light + dark baked in), the 4pt spacing grid, the radius
-scale, the six-role type ramp, motion presets, and the elevation ladder — plus
+scale, the six-role type ramp, motion presets, and the elevation ladder - plus
 the full design guidelines bundled as markdown.
 
 Tokens only, by design: SwiftUI components are built per-app against these
@@ -33,11 +33,11 @@ VStack(spacing: Spacing.s4) {
 
 Rules of the road (the bundled guidelines are the full reference):
 
-- **Colors**: only `Color.sd*` tokens — never `Color(red:green:blue:)` or
+- **Colors**: only `Color.sd*` tokens - never `Color(red:green:blue:)` or
   asset literals in views. Dark mode is in the token; never branch on
   `colorScheme` for colors.
 - **Spacing**: only the blessed steps (4/8/12/16/24/32/48pt).
-- **Type**: only the `Font.sd*` roles — they ride Dynamic Type.
+- **Type**: only the `Font.sd*` roles - they ride Dynamic Type.
 - **Radius**: continuous corners at 6/8/10/14pt by role.
 - **Touch targets**: 44×44pt minimum effective hit area.
 - **HIG arbitration**: Apple owns navigation chrome, gestures, and system
@@ -58,7 +58,7 @@ into the project root (or reference it from yours).
 
 ## Keeping tokens in sync
 
-Token values trace to the web theme's CSS — `TOKENS.md` maps every Swift
+Token values trace to the web theme's CSS - `TOKENS.md` maps every Swift
 constant to the CSS variable and OKLCH value it mirrors. When the web theme
 changes: update `TOKENS.md`, update the constants, and the unit tests will
 hold you honest (`swift test`).
